@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal portfolio website</title>
+    <link rel="stylesheet" href="portfolio.css" />
+    <script src="https://kit.fontawesome.com/fb1d3b24d5.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="prem.png" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#">Home </a></li>
+                    <li><a href="#">About </a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Portfolio </a></li>
+                    <li><a href="#">Contact </a></li>
+                    <i class="fas fa-times" onclick="closemenu()"></i>
+
+                </ul>
+                <i class="fas fa-bars" onclick="openmenu"></i>
+
+            </nav>
+            <div class="header-text">
+                <p>Web Developer</p>
+                <h1>Hi, I'm <span>Prem</span> <br>Patil From India</h1>
+                <a href="PremChandrakantPatilResume.pdf" download class="btn btn2"> Download Resume</a>
+
+            </div>
+        </div>
+    </div>
+    <!--    ---------------about-------------- -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="2.photu.jpg" alt="">
+                </div>
+
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>
+                        Hello Everyone , I am Prem Patil and i am from Mumbai,Maharashtra and
+                        currenty i am doing my Bachelor of Technology in Artificial Intelligence and Data Science
+                        Engineering from Mumbai
+                        University.
+                    </p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('Experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('Education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Web Development</span><br>Web app Developement</li>
+                            <li><span>Video editor</span><br> Editing 4K/HD videos</li>
+                            <li><span>Data structure</span><br> Learning data structure</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="Experience">
+                        <ul>
+                            <li><span>2023 - current</span><br>Remote Intern at Prodigy </li>
+                            <li><span>2022 - 2023</span><br>Video Editing</li>
+                            <li><span>2021 - 2022</span><br> skills up on Data structure</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="Education">
+                        <ul>
+                            <li><span>2021 - 2025</span><br>Currently doing my Btech</li>
+                            <li><span>2020 - 2021</span><br> Completing 12th grade with 82%</li>
+                            <li><span>2019</span><br> Completing 10th grade </li>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--     --------------------services--------------------------------------- -->
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Web design</h2>
+                    <p>
+                        "Professional web design services that elevate your online presence. Stunning websites tailored
+                        to
+                        your brand's unique vision."
+                    </p>
+                    <a href="#"> Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-brands fa-app-store-ios"></i>
+                    <h2>App design</h2>
+                    <p>
+                        "Expert app design services to create intuitive, visually captivating mobile experiences.
+                        Transform
+                        your ideas into polished, user-friendly applications."
+                    </p>
+                    <a href="#"> Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-wand-magic-sparkles"></i>
+                    <h2>Video Editing</h2>
+                    <p>
+
+                        "Enhance your storytelling with seamless video editing services. Captivate your audience with
+                        polished visuals and compelling narratives."
+                    </p>
+                    <a href="#"> Learn more</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--     ---------------------portfolio---------------- -->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="images/work1.jpg">
+                    <div class="layer">
+                        <h3>Social Media App</h3>
+                        <p>This app connects you to the talented people around the world.
+                            Download it from app store.
+                        </p>
+                        <a href="#"><i class="fa-regular fa-link"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work2.jpeg">
+                    <div class="layer">
+                        <h3>Music App</h3>
+                        <p>Here is the best 90's songs playlist for enjoy every beats.
+                            Download it from app store.
+                        </p>
+                        <a href="#"><i class="fa-regular fa-link"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work3.webp">
+                    <div class="layer">
+                        <h3>Online shopping App</h3>
+                        <p>This app offers you to buy the latest trending cloths with 50% off.
+                            Download it from app store.
+                        </p>
+                        <a href="#"><i class="fa-regular fa-link"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn"> See more</a>
+        </div>
+    </div>
+    <!-- -------------------contact--------------------- -->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-sharp fa-solid fa-paper-plane"></i>premcpatil1604@gmail.com</p>
+                    <P> <i class="fa-solid fa-phone"></i> 8055304117</P>
+                    <div class="social-icons">
+                        <a href=""><i class="fa-brands fa-facebook"></i></a>
+                        <a href=""><i class="fa-brands fa-x-twitter"></i></a>
+                        <a href=""><i class="fa-brands fa-linkedin"></i></a>
+                        <a href=""><i class="fa-brands fa-instagram"></i></a>
+                    </div>
+                </div>
+                <div class="contact-right">
+                    <form>
+                        <input type="text" name="Name" placeholder="your Name" required>
+                        <input type="email" name="email" placeholder="your Email" required>
+                        <textarea name="Message" rows="6" placeholder="your Message"></textarea>
+                        <button type="submit" class="btn btn2"> submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright © Prem. Made with <i class="fa-solid fa-heart"></i> Prem Patil</p>
+        </div>
+    </div>
+
+
+
+
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+
+        function opentab(tabname) {
+            for (tablink of tablinks) {
+                tablink.classList.remove("active-link");
+            }
+            for (tabcontent of tabcontents) {
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+    </script>
+    <script>
+        var sidemenu = document.getElementById("sidemenu");
+        function openmenu() {
+            sidemenu.style.right = "0";
+        }
+        function closemenu() {
+            sidemenu.style.right = "-200px";
+        }
+    </script>
+</body>
+
+</html>
